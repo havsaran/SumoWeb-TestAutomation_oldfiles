@@ -15,7 +15,7 @@ import sumo.qa.util.TestUtil;
 
 
 public class TestBase {
-	
+	public int number = 5;
 	public static WebDriver driver;
 	public static Properties prop;
 	
@@ -31,10 +31,10 @@ public class TestBase {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
+	}	
 		
 // Browser initialization
-	public static void initialization(){
+	public static void initialization() throws InterruptedException{
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
@@ -51,8 +51,8 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PageLoadTimeOut, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.ImplicityWait, TimeUnit.SECONDS);
-		
 		driver.get(prop.getProperty("url"));
+		Thread.sleep(TestUtil.sleepTime);
 		
 	}
 			

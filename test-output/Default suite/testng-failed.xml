@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sumo.qa.testcases.TestcaseTrialTest">
+      <class name="sumo.qa.testcases.FrontpageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="Testcase2"/>
           <include name="setUp"/>
-          <include name="Testcase3"/>
-          <include name="Testcase1"/>
+          <include name="tearDown"/>
+          <include name="GlemtPassordLink_Click_Testcase"/>
+          <include name="FåTilgangBtn_Click_Testcase"/>
+          <include name="NyBruker_FåtilgangNåLink_Click_Testcase"/>
         </methods>
-      </class> <!-- sumo.qa.testcases.TestcaseTrialTest -->
+      </class> <!-- sumo.qa.testcases.FrontpageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,5 +6,6 @@ public class TestUtil extends TestBase {
 
 	public static long PageLoadTimeOut = 20;
 	public static long ImplicityWait = 20;
+	public static long sleepTime = 2500;
 	
 }

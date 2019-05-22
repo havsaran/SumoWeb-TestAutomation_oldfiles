@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-05-22T12:01:42Z" name="TV 2 Sumo Automation Test Suite" finished-at="2019-05-22T12:01:58Z" duration-ms="15556">
+  <suite started-at="2019-05-22T16:18:27Z" name="TV 2 Sumo Automation Test Suite" finished-at="2019-05-22T16:18:51Z" duration-ms="24086">
     <groups>
     </groups>
-    <test started-at="2019-05-22T12:01:42Z" name="TV 2 sumo Test Cases" finished-at="2019-05-22T12:01:58Z" duration-ms="15556">
-      <class name="sumo.qa.testcases.TestcaseTrialTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.TestcaseTrialTest@4567f35d]" started-at="2019-05-22T12:01:42Z" name="setUp" finished-at="2019-05-22T12:01:47Z" duration-ms="4775" status="PASS">
+    <test started-at="2019-05-22T16:18:27Z" name="TV 2 sumo Test Cases" finished-at="2019-05-22T16:18:51Z" duration-ms="24086">
+      <class name="sumo.qa.testcases.FrontpageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:27Z" name="setUp" finished-at="2019-05-22T16:18:34Z" duration-ms="7059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Testcase1()[pri:1, instance:sumo.qa.testcases.TestcaseTrialTest@4567f35d]" started-at="2019-05-22T12:01:47Z" name="Testcase1" finished-at="2019-05-22T12:01:47Z" duration-ms="1" status="PASS">
+        <test-method signature="logginnBtn_Click_Testcase()[pri:1, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:34Z" name="logginnBtn_Click_Testcase" finished-at="2019-05-22T16:18:34Z" duration-ms="149" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testcase1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.TestcaseTrialTest@4567f35d]" started-at="2019-05-22T12:01:47Z" name="tearDown" finished-at="2019-05-22T12:01:48Z" duration-ms="761" status="PASS">
+        </test-method> <!-- logginnBtn_Click_Testcase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:34Z" name="tearDown" finished-at="2019-05-22T16:18:35Z" duration-ms="839" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.TestcaseTrialTest@4567f35d]" started-at="2019-05-22T12:01:48Z" name="setUp" finished-at="2019-05-22T12:01:52Z" duration-ms="4405" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:35Z" name="setUp" finished-at="2019-05-22T16:18:42Z" duration-ms="6580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Testcase2()[pri:1, instance:sumo.qa.testcases.TestcaseTrialTest@4567f35d]" started-at="2019-05-22T12:01:52Z" name="Testcase2" finished-at="2019-05-22T12:01:52Z" duration-ms="0" status="PASS">
+        <test-method signature="GlemtPassordLink_Click_Testcase()[pri:2, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:42Z" name="GlemtPassordLink_Click_Testcase" finished-at="2019-05-22T16:18:42Z" duration-ms="315" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testcase2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.TestcaseTrialTest@4567f35d]" started-at="2019-05-22T12:01:52Z" name="tearDown" finished-at="2019-05-22T12:01:53Z" duration-ms="754" status="PASS">
+        </test-method> <!-- GlemtPassordLink_Click_Testcase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:42Z" name="tearDown" finished-at="2019-05-22T16:18:43Z" duration-ms="778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.TestcaseTrialTest@4567f35d]" started-at="2019-05-22T12:01:53Z" name="setUp" finished-at="2019-05-22T12:01:57Z" duration-ms="4093" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:43Z" name="setUp" finished-at="2019-05-22T16:18:50Z" duration-ms="6608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Testcase3()[pri:1, instance:sumo.qa.testcases.TestcaseTrialTest@4567f35d]" started-at="2019-05-22T12:01:57Z" name="Testcase3" finished-at="2019-05-22T12:01:57Z" duration-ms="1" status="PASS">
+        <test-method signature="NyBruker_FåtilgangNåLink_Click_Testcase()[pri:3, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:50Z" name="NyBruker_FåtilgangNåLink_Click_Testcase" finished-at="2019-05-22T16:18:51Z" duration-ms="992" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testcase3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.TestcaseTrialTest@4567f35d]" started-at="2019-05-22T12:01:57Z" name="tearDown" finished-at="2019-05-22T12:01:58Z" duration-ms="747" status="PASS">
+        </test-method> <!-- NyBruker_FåtilgangNåLink_Click_Testcase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:51Z" name="tearDown" finished-at="2019-05-22T16:18:51Z" duration-ms="739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- sumo.qa.testcases.TestcaseTrialTest -->
+      </class> <!-- sumo.qa.testcases.FrontpageTest -->
     </test> <!-- TV 2 sumo Test Cases -->
   </suite> <!-- TV 2 Sumo Automation Test Suite -->
 </testng-results>
