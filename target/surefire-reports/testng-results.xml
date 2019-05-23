@@ -1,45 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-05-22T16:18:27Z" name="TV 2 Sumo Automation Test Suite" finished-at="2019-05-22T16:18:51Z" duration-ms="24086">
+  <suite started-at="2019-05-23T09:11:28Z" name="TV 2 Sumo Automation Test Suite" finished-at="2019-05-23T09:12:04Z" duration-ms="35613">
     <groups>
     </groups>
-    <test started-at="2019-05-22T16:18:27Z" name="TV 2 sumo Test Cases" finished-at="2019-05-22T16:18:51Z" duration-ms="24086">
+    <test started-at="2019-05-23T09:11:28Z" name="TV 2 sumo Test Cases" finished-at="2019-05-23T09:12:04Z" duration-ms="35613">
       <class name="sumo.qa.testcases.FrontpageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:27Z" name="setUp" finished-at="2019-05-22T16:18:34Z" duration-ms="7059" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:11:28Z" name="setUp" finished-at="2019-05-23T09:11:36Z" duration-ms="7701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logginnBtn_Click_Testcase()[pri:1, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:34Z" name="logginnBtn_Click_Testcase" finished-at="2019-05-22T16:18:34Z" duration-ms="149" status="PASS">
+        <test-method signature="LogginnFunction_Testcase()[pri:1, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:11:36Z" name="LogginnFunction_Testcase" finished-at="2019-05-23T09:11:39Z" duration-ms="2736" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logginnBtn_Click_Testcase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:34Z" name="tearDown" finished-at="2019-05-22T16:18:35Z" duration-ms="839" status="PASS">
+        </test-method> <!-- LogginnFunction_Testcase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:11:39Z" name="tearDown" finished-at="2019-05-23T09:11:39Z" duration-ms="724" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:35Z" name="setUp" finished-at="2019-05-22T16:18:42Z" duration-ms="6580" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:11:39Z" name="setUp" finished-at="2019-05-23T09:11:47Z" duration-ms="7178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="GlemtPassordLink_Click_Testcase()[pri:2, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:42Z" name="GlemtPassordLink_Click_Testcase" finished-at="2019-05-22T16:18:42Z" duration-ms="315" status="PASS">
+        <test-method signature="GlemtPassordLink_Click_Testcase()[pri:2, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:11:47Z" name="GlemtPassordLink_Click_Testcase" finished-at="2019-05-23T09:11:47Z" duration-ms="343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GlemtPassordLink_Click_Testcase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:42Z" name="tearDown" finished-at="2019-05-22T16:18:43Z" duration-ms="778" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:11:47Z" name="tearDown" finished-at="2019-05-23T09:11:48Z" duration-ms="694" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:43Z" name="setUp" finished-at="2019-05-22T16:18:50Z" duration-ms="6608" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:11:48Z" name="setUp" finished-at="2019-05-23T09:11:54Z" duration-ms="6789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="NyBruker_FåtilgangNåLink_Click_Testcase()[pri:3, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:50Z" name="NyBruker_FåtilgangNåLink_Click_Testcase" finished-at="2019-05-22T16:18:51Z" duration-ms="992" status="PASS">
+        <test-method signature="NyBruker_FåtilgangNåLink_Click_Testcase()[pri:3, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:11:54Z" name="NyBruker_FåtilgangNåLink_Click_Testcase" finished-at="2019-05-23T09:11:56Z" duration-ms="1371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NyBruker_FåtilgangNåLink_Click_Testcase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4567f35d]" started-at="2019-05-22T16:18:51Z" name="tearDown" finished-at="2019-05-22T16:18:51Z" duration-ms="739" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:11:56Z" name="tearDown" finished-at="2019-05-23T09:11:57Z" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:11:57Z" name="setUp" finished-at="2019-05-23T09:12:03Z" duration-ms="6532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logginnBtn_Click_Testcase()[pri:4, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:12:03Z" name="logginnBtn_Click_Testcase" finished-at="2019-05-23T09:12:03Z" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logginnBtn_Click_Testcase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@4466af20]" started-at="2019-05-23T09:12:03Z" name="tearDown" finished-at="2019-05-23T09:12:04Z" duration-ms="677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

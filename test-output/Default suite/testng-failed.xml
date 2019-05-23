@@ -7,9 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="GlemtPassordLink_Click_Testcase"/>
-          <include name="FåTilgangBtn_Click_Testcase"/>
-          <include name="NyBruker_FåtilgangNåLink_Click_Testcase"/>
+          <include name="LogginnFunction_Testcase"/>
         </methods>
       </class> <!-- sumo.qa.testcases.FrontpageTest -->
     </classes>

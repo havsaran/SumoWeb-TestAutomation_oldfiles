@@ -19,7 +19,7 @@ public class FrontpageTest extends TestBase{
 		
 	}
 	
-	@Test(priority=1)
+	@Test(priority=4)
 	public void logginnBtn_Click_Testcase(){		
 		frontpage.clickOn_LoggInnBtn ();		
 		Assert.assertEquals(frontpage.LogginnVerifyText.getText(), "Logg inn", "Logginn Button is not working ");
@@ -35,7 +35,7 @@ public class FrontpageTest extends TestBase{
 	
 	@Test(priority=2)
 	public void GlemtPassordLink_Click_Testcase(){		
-		frontpage.clickOn_LoggInnBtn ();
+		
 		frontpage.clickOnGlemtPassordLink();		
 		Assert.assertEquals(frontpage.GlemtPassordVerifyText.getText(), "Få passord", "Glemt Passordlink is not working");
 		//System.out.println(frontpage.LogginnVerifyText.getText());
@@ -43,12 +43,21 @@ public class FrontpageTest extends TestBase{
 	
 	@Test(priority=3)
 	public void NyBruker_FåtilgangNåLink_Click_Testcase(){	
-		frontpage.clickOn_LoggInnBtn ();
+		
 		frontpage.clickOn_NyBruker_FåtilgangNåBtn();		
 		Assert.assertEquals(frontpage.NybrukerFåtilgangverifyText.getText(), "Registrer ny bruker", "Ny bruker? Få tilgang nå! Link is not working");
 		//System.out.println(frontpage.LogginnVerifyText.getText());
 	}
 	
+		@Test(priority=1)
+		
+		public void LogginnFunction_Testcase () throws InterruptedException {
+			
+			frontpage.logginnFunction();
+			String userinitial= frontpage.ValidateLoggedinnPage.getText();
+			Assert.assertEquals(userinitial, "Saranraj", "LogginFunction is not working");
+		}
+		
 		
 	@AfterMethod
 	public void tearDown(){
