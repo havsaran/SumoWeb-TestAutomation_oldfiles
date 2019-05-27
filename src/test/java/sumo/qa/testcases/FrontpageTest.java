@@ -38,7 +38,7 @@ public class FrontpageTest extends TestBase{
 		
 		frontpage.clickOnGlemtPassordLink();		
 		Assert.assertEquals(frontpage.GlemtPassordVerifyText.getText(), "Få passord", "Glemt Passordlink is not working");
-		//System.out.println(frontpage.LogginnVerifyText.getText());
+		
 	}
 	
 	@Test(priority=3)
