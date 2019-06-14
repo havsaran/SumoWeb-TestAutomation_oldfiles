@@ -1,60 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-05-23T10:56:21Z" name="Default suite" finished-at="2019-05-23T10:56:58Z" duration-ms="36764">
+  <suite started-at="2019-06-14T12:03:38Z" name="Default suite" finished-at="2019-06-14T12:03:48Z" duration-ms="9687">
     <groups>
     </groups>
-    <test started-at="2019-05-23T10:56:21Z" name="Default test" finished-at="2019-05-23T10:56:58Z" duration-ms="36764">
+    <test started-at="2019-06-14T12:03:38Z" name="Default test" finished-at="2019-06-14T12:03:48Z" duration-ms="9687">
       <class name="sumo.qa.testcases.FrontpageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:21Z" name="setUp" finished-at="2019-05-23T10:56:28Z" duration-ms="7411" status="PASS">
+        <test-method is-config="true" signature="setExtent()[pri:0, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:38Z" name="setExtent" finished-at="2019-06-14T12:03:38Z" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:38Z" name="setUp" finished-at="2019-06-14T12:03:45Z" duration-ms="6935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LogginnFunction_Testcase()[pri:1, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:28Z" name="LogginnFunction_Testcase" finished-at="2019-05-23T10:56:31Z" duration-ms="2843" status="PASS">
+        <test-method signature="LogginnFunction_Testcase()[pri:1, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:45Z" name="LogginnFunction_Testcase" finished-at="2019-06-14T12:03:48Z" duration-ms="2563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogginnFunction_Testcase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:31Z" name="tearDown" finished-at="2019-05-23T10:56:32Z" duration-ms="694" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:48Z" name="tearDown" finished-at="2019-06-14T12:03:48Z" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LogginnFunction_Testcase status=SUCCESS method=FrontpageTest.LogginnFunction_Testcase()[pri:1, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at sumo.qa.testcases.FrontpageTest.tearDown(FrontpageTest.java:127)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:32Z" name="setUp" finished-at="2019-05-23T10:56:39Z" duration-ms="7334" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:48Z" name="setUp" finished-at="2019-06-14T12:03:48Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="GlemtPassordLink_Click_Testcase()[pri:2, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:39Z" name="GlemtPassordLink_Click_Testcase" finished-at="2019-05-23T10:56:40Z" duration-ms="452" status="PASS">
+        <test-method signature="GlemtPassordLink_Click_Testcase()[pri:2, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:48Z" name="GlemtPassordLink_Click_Testcase" finished-at="2019-06-14T12:03:48Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at sumo.qa.testcases.FrontpageTest.tearDown(FrontpageTest.java:127)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GlemtPassordLink_Click_Testcase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:40Z" name="tearDown" finished-at="2019-05-23T10:56:41Z" duration-ms="896" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:48Z" name="tearDown" finished-at="2019-06-14T12:03:48Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:41Z" name="setUp" finished-at="2019-05-23T10:56:48Z" duration-ms="7131" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:48Z" name="setUp" finished-at="2019-06-14T12:03:48Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="NyBruker_FåtilgangNåLink_Click_Testcase()[pri:3, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:48Z" name="NyBruker_FåtilgangNåLink_Click_Testcase" finished-at="2019-05-23T10:56:49Z" duration-ms="1396" status="PASS">
+        <test-method signature="NyBruker_FåtilgangNåLink_Click_Testcase()[pri:3, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:48Z" name="NyBruker_FåtilgangNåLink_Click_Testcase" finished-at="2019-06-14T12:03:48Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at sumo.qa.testcases.FrontpageTest.tearDown(FrontpageTest.java:127)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NyBruker_FåtilgangNåLink_Click_Testcase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:49Z" name="tearDown" finished-at="2019-05-23T10:56:50Z" duration-ms="719" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:48Z" name="tearDown" finished-at="2019-06-14T12:03:48Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:50Z" name="setUp" finished-at="2019-05-23T10:56:57Z" duration-ms="6796" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:48Z" name="setUp" finished-at="2019-06-14T12:03:48Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logginnBtn_Click_Testcase()[pri:4, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:57Z" name="logginnBtn_Click_Testcase" finished-at="2019-05-23T10:56:57Z" duration-ms="382" status="PASS">
+        <test-method signature="logginnBtn_Click_Testcase()[pri:4, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:48Z" name="logginnBtn_Click_Testcase" finished-at="2019-06-14T12:03:48Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at sumo.qa.testcases.FrontpageTest.tearDown(FrontpageTest.java:127)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logginnBtn_Click_Testcase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:sumo.qa.testcases.FrontpageTest@3d34d211]" started-at="2019-05-23T10:56:57Z" name="tearDown" finished-at="2019-05-23T10:56:58Z" duration-ms="683" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:48Z" name="tearDown" finished-at="2019-06-14T12:03:48Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:sumo.qa.testcases.FrontpageTest@c0c2f8d]" started-at="2019-06-14T12:03:48Z" name="endReport" finished-at="2019-06-14T12:03:48Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
       </class> <!-- sumo.qa.testcases.FrontpageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

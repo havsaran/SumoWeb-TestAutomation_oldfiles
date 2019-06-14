@@ -5,9 +5,13 @@
     <classes>
       <class name="sumo.qa.testcases.FrontpageTest">
         <methods>
+          <include name="setExtent"/>
           <include name="setUp"/>
+          <include name="logginnBtn_Click_Testcase"/>
+          <include name="endReport"/>
           <include name="tearDown"/>
-          <include name="LogginnFunction_Testcase"/>
+          <include name="GlemtPassordLink_Click_Testcase"/>
+          <include name="NyBruker_FåtilgangNåLink_Click_Testcase"/>
         </methods>
       </class> <!-- sumo.qa.testcases.FrontpageTest -->
     </classes>

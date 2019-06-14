@@ -10,14 +10,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 import sumo.qa.util.TestUtil;
 
 
 public class TestBase {
-	public int number = 5;
+	//public int number = 5;
 	public static WebDriver driver;
 	public static Properties prop;
+	
+	public ExtentReports extent;
+	public ExtentTest logger;
 	
 // 	TestBase constructor
 	public TestBase(){
@@ -38,15 +43,15 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Files needed for Testing Automation\\chromedriver_win32\\chromedriver.exe");	
+			//System.setProperty("webdriver.chrome.driver", "C:\\Files needed for Testing Automation\\chromedriver_win32\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "C:\\Files needed for Testing Automation\\chromedriver_win32\\chromedriver.exe");	
+			System.setProperty("webdriver.gecko.driver", "chromedriver.exe");	
 			driver = new FirefoxDriver(); 
 		}
-			
-		
+					
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PageLoadTimeOut, TimeUnit.SECONDS);
