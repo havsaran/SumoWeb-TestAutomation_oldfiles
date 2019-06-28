@@ -2,6 +2,7 @@ package sumo.qa.pages;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -19,7 +20,7 @@ public class Frontpage extends TestBase {
 	public	WebElement LogginnVerifyText;
 	
 	@FindBy(xpath="//span[contains(text(),'Få tilgang')]")
-	private WebElement FåTilgang;
+	public WebElement FåTilgang;
 	
 	@FindBy (partialLinkText = "Ny bruker")
 	private WebElement NybrukerFåtilgang;	
@@ -28,7 +29,7 @@ public class Frontpage extends TestBase {
 	
 	
 	@FindBy(xpath = "//button[contains(text(),'Glemt passord?')]")
-	private WebElement GlemtPassord;	
+	public WebElement GlemtPassord;	
 	@FindBy(xpath = "//span[contains(text(),'Få passord')]")
 	public WebElement GlemtPassordVerifyText;
 	
@@ -44,8 +45,18 @@ public class Frontpage extends TestBase {
 	
 	@FindBy (xpath = "//span[@class='dropdown__trigger-text']")
 	public WebElement ValidateLoggedinnPage;
+
+	// Avbryt botton
+	 @FindBy  (xpath = "// span[contains (text(), 'Avbryt')]")
+	 private WebElement AvbrytBtn;
 	
-	
+	 // SumoLogo/image
+	 
+	 @FindBy (xpath = "//a[@class='header__logo']//*[@class='svglogo svglogo-sumo-white']")
+	 private WebElement SumoLogo; 
+	 
+	 
+	 
 	// Actions 
 	
 public Frontpage () {
@@ -57,8 +68,9 @@ public void clickOn_LoggInnBtn ()
 {	LogginnTriggerLink.click();
 }
 
-public void clickOn_NyBruker_FåtilgangNåBtn () 
+public void clickOn_NyBruker_FåtilgangNåBtn ()  
 {	LogginnTriggerLink.click();
+
 	NybrukerFåtilgang.click();
 	}
 
@@ -82,11 +94,28 @@ public void logginnFunction () throws InterruptedException {
 	
 	UserName.sendKeys(user);
 	Password.sendKeys(pass);
-	LogginnBtn.click();
+	//Password.sendKeys(Keys.RETURN); // by using keyboard Enter 
+	LogginnBtn.click(); // by using mouse
 	Thread.sleep(2000);
-		
 }
 
+public void clickOn_LogginnAvbrytBtn ()  {
+	LogginnTriggerLink.click();
+	try {
+		Thread.sleep(2000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	AvbrytBtn.click();
+	 
+}
+
+public void clickOn_SumoLogo() {
+	
+	SumoLogo.click();
+	
+}
 
 }
 

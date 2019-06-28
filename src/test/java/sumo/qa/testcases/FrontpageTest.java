@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.NoSuchElementException;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -24,7 +26,6 @@ import sumo.qa.base.TestBase;
 import sumo.qa.pages.Frontpage;
 
 public class FrontpageTest extends TestBase{
-	
 	Frontpage frontpage;
 	
 	public ExtentReports extent;
@@ -41,12 +42,12 @@ public class FrontpageTest extends TestBase{
 	public void setUp() throws InterruptedException{
 		initialization();
 		frontpage = new Frontpage ();
-		
+	
 	}
 	
 	@Test(priority=1)
 	
-	public void LogginnFunction_Testcase () throws InterruptedException {
+	public void LogginnFunction_Test() throws InterruptedException {
 		extentTest = extent.startTest("LogginnFunction_Testcase");
 		
 		frontpage.logginnFunction();
@@ -56,18 +57,18 @@ public class FrontpageTest extends TestBase{
 	
 	
 	@Test(priority=2)
-	public void GlemtPassordLink_Click_Testcase(){	
+	public void GlemtPassordLink_Click_Test(){	
 		extentTest = extent.startTest("GlemtPassordLink_Click_Testcase");
 		
 		frontpage.clickOnGlemtPassordLink();		
-		Assert.assertEquals(frontpage.GlemtPassordVerifyText.getText(), "Få passord123", "Glemt Passordlink is not working");
+		Assert.assertEquals(frontpage.GlemtPassordVerifyText.getText(), "Få passord", "Glemt Passordlink is not working");
 		
 	}
 	
 	@Test(priority=3)
-	public void NyBruker_FåtilgangNåLink_Click_Testcase(){	
+	public void NyBruker_FaatilgangNaaLink_Test(){	
 		
-		extentTest = extent.startTest("NyBruker_FåtilgangNåLink_Click_Testcase");
+		extentTest = extent.startTest("NyBruker_FåtilgangNåLink_Testcase");
 		
 		frontpage.clickOn_NyBruker_FåtilgangNåBtn();		
 		Assert.assertEquals(frontpage.NybrukerFåtilgangverifyText.getText(), "Registrer ny bruker", "Ny bruker? Få tilgang nå! Link is not working");
@@ -75,15 +76,49 @@ public class FrontpageTest extends TestBase{
 	}
 	
 	@Test(priority=4)
-	public void logginnBtn_Click_Testcase(){
+	public void logginnBtn_Click_Test(){
 		
 		extentTest = extent.startTest("logginnBtn_Click_Testcase");
 		frontpage.clickOn_LoggInnBtn ();		
-		Assert.assertEquals(frontpage.LogginnVerifyText.getText(), "Logg inn123", "Logginn Button is not working ");
+		Assert.assertEquals(frontpage.LogginnVerifyText.getText(), "Logg inn", "Logginn Button is not working ");
 		//System.out.println(frontpage.LogginnVerifyText.getText());
 	}
 	
+	 
+	@Test(priority=5)		
+	public void LogginnAvbrytBtn_Click_Test(){
+		extentTest = extent.startTest("LogginnAvbrytBtn_Click_Testcase");
+		frontpage.clickOn_LogginnAvbrytBtn();
+		
 			
+		boolean flag = true;
+		frontpage.clickOn_LogginnAvbrytBtn();
+			
+		try {
+			frontpage.GlemtPassord.click();	
+			Assert.assertEquals(flag, false, "LogginnAvbrytBtn_Click_Testcase- is not working");
+		}
+		catch (Exception e) {
+			flag = false;						
+			Assert.assertEquals(flag, false, "LogginnAvbrytBtn_Click_Testcase- is not working");
+			//System.out.println(e.getMessage());
+		}
+			
+}
+	
+	@Test(priority=6)
+	public void SumoLogo_Click_Test() {		
+		extentTest = extent.startTest("SumoLogo_Click_Testcase");
+		
+		//System.out.println(driver.getTitle());
+		
+		frontpage.clickOn_SumoLogo();
+	
+		boolean flag = frontpage.FåTilgang.isDisplayed();
+		
+		Assert.assertEquals(flag, true,"It's redirected different page");
+		
+	}
 		
 	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException{
@@ -115,7 +150,7 @@ public class FrontpageTest extends TestBase{
 	
 	public static String getScreenshot (WebDriver driver, String screenshotName) throws IOException {
 		
-		String dateName = new SimpleDateFormat("yyyyMMddhhss").format(new Date ());
+		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date ());
 		
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);

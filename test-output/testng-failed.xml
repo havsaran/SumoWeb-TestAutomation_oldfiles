@@ -7,11 +7,13 @@
         <methods>
           <include name="setExtent"/>
           <include name="setUp"/>
-          <include name="logginnBtn_Click_Testcase"/>
           <include name="endReport"/>
+          <include name="logginnBtn_Click_Test"/>
           <include name="tearDown"/>
-          <include name="GlemtPassordLink_Click_Testcase"/>
-          <include name="NyBruker_FåtilgangNåLink_Click_Testcase"/>
+          <include name="LogginnAvbrytBtn_Click_Test"/>
+          <include name="GlemtPassordLink_Click_Test"/>
+          <include name="NyBruker_FaatilgangNaaLink_Test"/>
+          <include name="SumoLogo_Click_Test"/>
         </methods>
       </class> <!-- sumo.qa.testcases.FrontpageTest -->
     </classes>

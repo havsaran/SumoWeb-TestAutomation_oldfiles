@@ -42,16 +42,34 @@ public class TestBase {
 	public static void initialization() throws InterruptedException{
 		String browserName = prop.getProperty("browser");
 		
+		String OS=System.getProperty("os.name");
+		
+	if(OS.toUpperCase().contains("WINDOWS")) {
+	
 		if(browserName.equals("chrome")){
 			//System.setProperty("webdriver.chrome.driver", "C:\\Files needed for Testing Automation\\chromedriver_win32\\chromedriver.exe");	
 			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "chromedriver.exe");	
+			System.setProperty("webdriver.gecko.driver", "geckodriver.exe");	
 			driver = new FirefoxDriver(); 
 		}
-					
+	}
+	
+	else if(OS.toUpperCase().contains("MAC")) {
+	
+		if(browserName.equals("chrome")){
+			//System.setProperty("webdriver.chrome.driver", "C:\\Files needed for Testing Automation\\chromedriver_win32\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", "chromedriver");
+			driver = new ChromeDriver(); 
+		}
+		else if(browserName.equals("FF")){
+			System.setProperty("webdriver.gecko.driver", "geckodriver");	
+			driver = new FirefoxDriver(); 
+		}
+	}
+	
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PageLoadTimeOut, TimeUnit.SECONDS);
