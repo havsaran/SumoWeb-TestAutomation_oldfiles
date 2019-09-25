@@ -1,3 +1,5 @@
+sumo\qa\util\Xls_Reader.class
+sumo\qa\pages\Nybruker.class
 sumo\qa\base\TestBase.class
 sumo\qa\pages\Frontpage.class
 sumo\qa\util\TestUtil.class

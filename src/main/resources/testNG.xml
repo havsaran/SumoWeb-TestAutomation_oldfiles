@@ -9,8 +9,9 @@
 
 	<test name="TV 2 sumo Test Cases">
 		<classes>
-			<class name="sumo.qa.testcases.FrontpageTest"></class>
-			
+			<!--   <class name="sumo.qa.testcases.FrontpageTest"></class>-->
+			<class name="sumo.qa.testcases.NybrukerTest"></class>
+						
 		</classes>
 	</test>
 </suite>

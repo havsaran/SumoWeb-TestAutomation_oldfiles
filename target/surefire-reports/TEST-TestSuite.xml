@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="59.63" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1.124" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+12-LTS"/>
@@ -25,26 +25,24 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Files needed for Testing Automation\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\..\bin\m2.conf"/>
+    <property name="classworlds.conf" value="C:\Users\speriy\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf16234830549320186335.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.3_windows-x64_bin\jdk-11.0.3\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-11.0.3_windows-x64_bin\jdk-11.0.3\bin;C:\Files needed for Testing Automation\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Users\speriy\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\bin;C:\Files needed for Testing Automation\Jenkins;;."/>
-    <property name="maven.conf" value="C:\Files needed for Testing Automation\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\../conf"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.3_windows-x64_bin\jdk-11.0.3\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.3_windows-x64_bin/jdk-11.0.3/bin/server;C:/Program Files/Java/jdk-11.0.3_windows-x64_bin/jdk-11.0.3/bin;C:\Program Files\Java\jdk-11.0.3_windows-x64_bin\jdk-11.0.3\bin;C:\Files needed for Testing Automation\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Users\speriy\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\bin;C:\Files needed for Testing Automation\Jenkins;;C:\Users\speriy\Downloads\eclipse-jee-2018-12-R-win32-x86_64\eclipse;;."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="C:\Files needed for Testing Automation\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\..\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\speriy"/>
     <property name="user.timezone" value="Europe/Berlin"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="11"/>
     <property name="user.name" value="speriy"/>
-    <property name="java.class.path" value="C:\Files needed for Testing Automation\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.class.path" value="C:\Users\speriy\Downloads\eclipse-jee-2018-12-R-win32-x86_64\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.10.0.20181127-2120\jars\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.3_windows-x64_bin\jdk-11.0.3"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -52,22 +50,15 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="11.0.3"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="sun.stderr.encoding" value="cp437"/>
-    <property name="maven.home" value="C:\Files needed for Testing Automation\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin\.."/>
+    <property name="maven.home" value="C:\Users\speriy\eclipse-workspace\SumoWeb-TestAutomation\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2019-04-16"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.vendor.version" value="18.9"/>
-    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="LogginnFunction_Test" classname="sumo.qa.testcases.FrontpageTest" time="2.896"/>
-  <testcase name="GlemtPassordLink_Click_Test" classname="sumo.qa.testcases.FrontpageTest" time="0.327"/>
-  <testcase name="NyBruker_FaatilgangNaaLink_Test" classname="sumo.qa.testcases.FrontpageTest" time="1.045"/>
-  <testcase name="logginnBtn_Click_Test" classname="sumo.qa.testcases.FrontpageTest" time="0.164"/>
-  <testcase name="LogginnAvbrytBtn_Click_Test" classname="sumo.qa.testcases.FrontpageTest" time="9.439"/>
-  <testcase name="SumoLogo_Click_Test" classname="sumo.qa.testcases.FrontpageTest" time="0.232"/>
+  <testcase name="dummymethod" classname="sumo.qa.testcases.NybrukerTest" time="0.007"/>
 </testsuite>
