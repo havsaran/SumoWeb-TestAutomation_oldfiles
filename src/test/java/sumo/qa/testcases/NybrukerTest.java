@@ -40,6 +40,7 @@ public class NybrukerTest extends TestBase{
 	@Test
 
 	String NybrukerTest () {
+		extentTest = extent.startTest("NybrukerTest_Testcase");
 		String howmanyapple = "10";
 		System.out.println(this);
 		return howmanyapple;
@@ -48,7 +49,8 @@ public class NybrukerTest extends TestBase{
 	
 	@Test
 	void goToPakkerTest() {
-	nybruker.goToPakker();
+	extentTest = extent.startTest("goToPakkerTest_Testcase");
+		nybruker.goToPakker();
 	
 	
 	}
